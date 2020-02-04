@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
 
 		buttonCalculateAlg.setOnClickListener() {
 			if (editTextArg.text.isNotEmpty() && editTextPhi.text.isNotEmpty()) {
-				complexNumber.arg = editTextArg.text.toString().toDouble()
-				complexNumber.phi = editTextPhi.text.toString().toDouble()
-				atext = String.format("%.${signsAfterDot}f", complexNumber.a)
-				btext = String.format("%.${signsAfterDot}f", complexNumber.b)
-				res = if (complexNumber.b >= 0)
+				complexNumber.setArg(editTextArg.text.toString().toDouble())
+				complexNumber.setPhi(editTextPhi.text.toString().toDouble())
+				atext = String.format("%.${signsAfterDot}f", complexNumber.getA())
+				btext = String.format("%.${signsAfterDot}f", complexNumber.getB())
+				res = if (complexNumber.getB() >= 0)
 					atext + "+" + btext + "i"
 				else
 					atext + btext + "i"
@@ -31,12 +31,12 @@ class MainActivity : AppCompatActivity() {
 
 		buttonCalculateExp.setOnClickListener() {
 			if (editTextA.text.isNotEmpty() && editTextB.text.isNotEmpty()) {
-				complexNumber.a = editTextA.text.toString().toDouble()
-				complexNumber.b = editTextB.text.toString().toDouble()
+				complexNumber.setA(editTextA.text.toString().toDouble())
+				complexNumber.setB(editTextB.text.toString().toDouble())
 				textViewResArg.text =
-					"arg: +${String.format("%.${signsAfterDot}f", complexNumber.arg)}"
+					"arg: ${String.format("%.${signsAfterDot}f", complexNumber.getArg())}"
 				textViewResPhi.text =
-					"phi: +${String.format("%.${signsAfterDot}f", complexNumber.arg)}"
+					"phi: ${String.format("%.${signsAfterDot}f", complexNumber.getPhi())}"
 			} else {
 				textViewResArg.text = "Fill the fields"
 				textViewResPhi.text = ""

@@ -35,16 +35,19 @@ class Complex {
 
 
 	private fun convertFromExpToAlg() {
-		this.a = (arg * cos(phi * (PI / 180)))
-		this.b = (arg * sin(phi * (PI / 180)))
+		this.a = (arg * cos(phi * (PI / 180.0)))
+		this.b = (arg * sin(phi * (PI / 180.0)))
 	}
 
 	private fun convertFromAlgToExp() {
 		this.arg = sqrt((this.a * this.a) + (this.b * this.b))
 
-		if (this.a > 0) this.phi = atan(abs(this.b / this.a))
-		else if (this.a < 0 && this.b > 0) this.phi = atan(abs(this.b / this.a)) + 180.0
-		else if (this.a < 0 && this.b < 0) this.phi = atan(abs(this.b / this.a)) - 180.0
+		if (this.a > 0) this.phi =
+			atan(abs((this.b * (PI / 180.0)) / (this.a * (PI / 180.0)))) * (180.0 / PI)
+		else if (this.a < 0 && this.b > 0) this.phi =
+			atan(abs((this.b * (PI / 180.0)) / (this.a * (PI / 180.0)))) * (180.0 / PI) + 180.0
+		else if (this.a < 0 && this.b < 0) this.phi =
+			atan(abs((this.b * (PI / 180.0)) / (this.a * (PI / 180.0)))) * (180.0 / PI) - 180.0
 		else if (this.a == 0.0 && this.b > 0) this.phi = 90.0
 		else if (this.a == 0.0 && this.b < 0) this.phi = -90.0
 	}
