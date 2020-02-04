@@ -50,6 +50,7 @@ class Complex {
 			atan(abs((this.b * (PI / 180.0)) / (this.a * (PI / 180.0)))) * (180.0 / PI) - 180.0
 		else if (this.a == 0.0 && this.b > 0) this.phi = 90.0
 		else if (this.a == 0.0 && this.b < 0) this.phi = -90.0
+		else if (this.a == 0.0 && this.b == 0.0) this.phi = 0.0
 	}
 
 	operator fun plus(other: Complex): Complex {
