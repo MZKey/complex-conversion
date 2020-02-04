@@ -3,29 +3,30 @@ package com.mzkey.complexconversion
 import kotlin.math.*
 
 class Complex {
-	var a: Double = 0.0
-		set(a: Double) {
-			field = a
-			convertFromAlgToExp()
-		}
+	private var a: Double = 0.0
+	private var b: Double = 0.0
+	private var arg: Double = 0.0
+	private var phi: Double = 0.0
 
-	var b: Double = 0.0
-		set(b: Double) {
-			field = b
-			convertFromAlgToExp()
-		}
+	fun setA(a: Double) {
+		this.a = a
+		convertFromAlgToExp()
+	}
 
-	var arg: Double = 0.0
-		set(arg: Double) {
-			field = arg
-			convertFromExpToAlg()
-		}
+	fun setB(b: Double) {
+		this.b = b
+		convertFromAlgToExp()
+	}
 
-	var phi: Double = 0.0
-		set(phi: Double) {
-			field = phi
-			convertFromExpToAlg()
-		}
+	fun setArg(arg: Double) {
+		this.arg = arg
+		convertFromExpToAlg()
+	}
+
+	fun setPhi(phi: Double) {
+		this.phi = phi
+		convertFromExpToAlg()
+	}
 
 	private fun convertFromExpToAlg() {
 		this.a = (arg * cos(phi * (PI / 180)))
