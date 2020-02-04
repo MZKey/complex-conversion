@@ -28,6 +28,12 @@ class Complex {
 		convertFromExpToAlg()
 	}
 
+	fun getA(): Double = this.a
+	fun getB(): Double = this.b
+	fun getArg(): Double = this.arg
+	fun getPhi(): Double = this.phi
+
+
 	private fun convertFromExpToAlg() {
 		this.a = (arg * cos(phi * (PI / 180)))
 		this.b = (arg * sin(phi * (PI / 180)))
