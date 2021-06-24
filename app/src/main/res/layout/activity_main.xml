@@ -36,7 +36,7 @@
                 android:id="@+id/textViewPhi"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:text="@string/arg"
                 android:textSize="24sp"
                 android:typeface="normal" />
@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="numberDecimal|numberSigned" />
 
             <Space
@@ -75,7 +76,7 @@
                 android:id="@+id/textViewArg"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:text="@string/phi"
                 android:textSize="24sp"
                 android:typeface="normal" />
@@ -90,6 +91,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="numberDecimal|numberSigned" />
 
             <Space
@@ -114,7 +116,7 @@
                 android:id="@+id/textViewAlgRes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:typeface="normal" />
@@ -129,7 +131,7 @@
             android:id="@+id/buttonCalculateAlg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-medium"
             android:text="@string/calculate"
             android:textSize="24sp" />
     </LinearLayout>
@@ -156,7 +158,7 @@
                 android:id="@+id/textViewA"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:text="@string/a"
                 android:textSize="24sp"
                 android:typeface="normal" />
@@ -171,6 +173,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="numberDecimal|numberSigned" />
 
             <Space
@@ -195,7 +198,7 @@
                 android:id="@+id/textViewB"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:text="b"
                 android:textSize="24sp"
                 android:typeface="normal" />
@@ -210,6 +213,7 @@
                 android:layout_height="wrap_content"
                 android:autofillHints=""
                 android:ems="10"
+                android:fontFamily="sans-serif-medium"
                 android:inputType="numberDecimal|numberSigned" />
 
             <Space
@@ -234,7 +238,7 @@
                 android:id="@+id/textViewResArg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:typeface="normal" />
@@ -259,7 +263,7 @@
                 android:id="@+id/textViewResPhi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="sans-serif-medium"
                 android:textAlignment="center"
                 android:textSize="30sp"
                 android:typeface="normal" />
@@ -274,7 +278,7 @@
             android:id="@+id/buttonCalculateExp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
+            android:fontFamily="sans-serif-medium"
             android:text="@string/calculate"
             android:textSize="24sp" />
 
